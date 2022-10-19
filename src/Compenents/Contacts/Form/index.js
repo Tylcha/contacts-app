@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
+//state
 const initializeDefaultForm = { fullname: '', phone_number: '' };
 
 function Form({ addcontacts, pushcontacts }) {
@@ -9,6 +10,7 @@ function Form({ addcontacts, pushcontacts }) {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
 
+  //submit state with prevstate
   const onSubmit = (e) => {
     e.preventDefault();
     if (form.fullname === '' || form.phone_number === '') {
@@ -18,6 +20,7 @@ function Form({ addcontacts, pushcontacts }) {
     console.log(form)
   }
 
+  //clear search bar
   useEffect(() => {
     setForm(initializeDefaultForm)
   }, [pushcontacts])
