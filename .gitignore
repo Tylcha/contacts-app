@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+*logo.svg
+*setupTest.js
+*App.test.js
+*reportWebVitals.js
+*/public
